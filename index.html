@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scientific Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="app.JS"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css code start -->
+    <style>
+
+.mybtn{
+border-radius: 40px;
+background-color: blue;
+
+box-shadow:  11px 11px 21px #696969,
+               -11px -11px 21px #ffffff;
+               color: white;
+}
+
+
+.inputStyle{
+    
+    background-color: pink;
+
+}
+    </style>
+    <!-- css code end -->
+
+</head>
+
+<body>
+    
+    <main class="d-flex container align-items-center justify-content-center  w-50" style="height: 100vh;">
+
+        <table class="table">
+            <thead>
+                <tr class="inputStyle">
+                    <th colspan="4"><input type="text" name="" id="result" style="width: 100%;" placeholder="0"> </th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('Math.sin')">sin</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('Math.cos')">cos</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('Math.tan')">tan</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb(Math.PI)">&pi;</button> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('&#40;')">(</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('&#41;')">)</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('Math.exp')">EXP</button> </td>
+                     <td><button class="mybtn btn btn-dark w-100 text-center" onclick="square()">x²</button></td>
+
+                </tr>
+
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('Math.sqrt')">&Sqrt;</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('Math.log')">log</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center"  onclick="deleteCharacter()">DEL</button></td>
+                    <td><button class=" btn btn-danger w-100 text-center" onclick="clearNum()">AC</button> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('7')">7</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('8')">8</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('9')">9</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('/')">&divide;</button> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('4')">4</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('5')">5</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('6')">6</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('*')">x</button> </td>
+                </tr>
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('1')">1</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('2')">2</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('3')">3</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('-')">-</button> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('0')">0</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('.')">.</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getResult()">=</button> </td>
+                    <td><button class="mybtn btn btn-dark w-100 text-center" onclick="getNumb('+')">+</button> </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
